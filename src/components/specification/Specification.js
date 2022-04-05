@@ -1,9 +1,9 @@
 import React from 'react';
+import "./Specification.css";
 
 const Specification = ({title, titleSpec, description, descriptionSpec, numbOfSubscribers, numbOfSubscribersSpec}) => {
     return (
-        <div className="outer-container-specification">
-            <article className="inner-container-specification">
+            <section className="specification">
                 <h2>{title}</h2>
                 <p>{titleSpec}</p>
 
@@ -12,8 +12,7 @@ const Specification = ({title, titleSpec, description, descriptionSpec, numbOfSu
 
                 <h2>{numbOfSubscribers}</h2>
                 <p>{numbOfSubscribersSpec}</p>
-            </article>
-        </div>
+            </section>
     );
 };
 

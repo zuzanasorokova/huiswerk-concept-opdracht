@@ -4,6 +4,7 @@ import {Link, useParams} from "react-router-dom";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Specification from "../../components/specification/Specification";
+import "./Subreddit.css";
 
 const Subreddit = () => {
     const [subredditInfo, setSubredditInfo] = useState(null)
@@ -26,29 +27,35 @@ const Subreddit = () => {
     }, []);
     return (
         <>
-            <div className="outer-container-subredditpage">
-                {subredditInfo &&
+            {subredditInfo &&
             <>
                 <Header
                     title={subredditInfo.display_name_prefixed}
-                    subtitle="subreddit specifications"
+                    subtitle="Subreddit specifications"
                 />
-                <Specification
-                title="Title"
-                titleSpec={subredditInfo.title}
-                description="Description"
-                descriptionSpec={subredditInfo.public_description}
-                numbOfSubscribers="Number of subscribers"
-                numbOfSubscribersSpec={subredditInfo.subscribers}
-                />
-            </>
-            }
-                <Link to="/">Take me back</Link>
+
+                <main className="outer-container">
+                    <div className="inner-container subreddit-view">
+                        <Specification
+                                       title="Title"
+                                       titleSpec={subredditInfo.title}
+                                       description="Description"
+                                       descriptionSpec={subredditInfo.public_description}
+                                       numbOfSubscribers="Number of subscribers"
+                                       numbOfSubscribersSpec={subredditInfo.subscribers}
+                        />
+                        <div className="link-take-me-back">
+                            <Link to="/" className="link">Take me back</Link>
+                        </div>
+
+                    </div>
+                </main>
 
                 <Footer
                     text="In opdracht van NOVI hogeschool © 2022"
                 />
-            </div>
+            </>
+            }
 
         </>
     );

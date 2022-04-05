@@ -4,8 +4,8 @@ import "./Header.css";
 
 const Header = ({image, title, subtitle}) => {
     return (
-        <header className="outer-container-header">
-            <div className="inner-container-header-content">
+        <header className="outer-container header">
+            <div className="inner-container header">
                 <nav className="menu">
                     <ul>
                         <li>
@@ -27,7 +27,7 @@ const Header = ({image, title, subtitle}) => {
                         :
                         <>
                         <h1>{title}</h1>
-                        <p>{subtitle}</p>
+                        <p className="subtitle">{subtitle}</p>
                         </>
                         }
                 </div>

@@ -1,16 +1,16 @@
 * {
-    margin:0;
-    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    /*font-family: 'Comforter', cursive;*/
 }
 
-
-.outer-container-footer {
+.footer {
     background-color: black;
     color: #FFFFFF;
-    padding: 15px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    height: 50px;
+    font-size: smaller;
+    font-weight: unset;
 }
