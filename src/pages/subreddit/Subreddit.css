@@ -1,0 +1,16 @@
+.subreddit-view {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.link-take-me-back {
+    color: #dd3038;
+    font-weight: bolder;
+}
+
+.link-take-me-back::before {
+    content: "< ";
+}

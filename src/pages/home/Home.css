@@ -1,0 +1,23 @@
+
+.body {
+    background-color: #FDF4F2;
+    align-items: center
+;
+}
+
+.body-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.post-view {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    column-width: 300px;
+    justify-content: center;
+}
